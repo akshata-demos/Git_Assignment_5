@@ -1,0 +1,27 @@
+Git workflow ->
+
+Permanent Branches
+main: This branch stores the official, production-ready release history. Commits on main are typically tagged with version numbers (e.g., v1.0, v1.1).
+develop: This branch serves as the main integration branch for the next release. All new features are merged into develop and it contains the current pre-production
+code.
+
+Supporting Branches
+These branches have a limited lifespan and are merged back into one of the permanent branches when their purpose is fulfilled.
+
+Feature branches:
+Purpose: To develop new features or enhancements in isolation.
+Created from: develop.
+Merged into: develop.
+Key action: git flow feature start [feature_name].
+
+Release branches:
+Purpose: To prepare for a new production release, allowing for final bug fixes, testing, and documentation without disrupting ongoing development in develop.
+Created from: develop.
+Merged into: Both main (and tagged with a version number) and back into develop.
+Key action: git flow release start [release_version].
+
+Hotfix branches:
+Purpose: To quickly address critical bugs in the production code (main branch).
+Created from: main.
+Merged into: Both main (and tagged) and develop (to ensure the fix is in the next release).
+Key action: git flow hotfix start [hotfix_name].
