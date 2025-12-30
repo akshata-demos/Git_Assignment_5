@@ -1,0 +1,10 @@
+Tasks To Be Performed:
+1. Create a Git Flow workflow architecture on Git
+2. Create all the required branches
+3. Starting from the feature branch, push the branch to the master, following
+   the architecture
+4. Push a urgent.txt on master using hotfix
+
+*******************************+++++++++++++++++++********************************
+
+1) 
