@@ -1,0 +1,22 @@
+Key Steps in a Hotfix Branch Strategy
+
+Identify & Branch: A critical bug is found in the live main/master branch. A hotfix-* branch is created directly from the main/master branch's latest commit.
+bash
+	git checkout -b hotfix-1.2.1 main
+
+Develop & Test: Developers work only on the hotfix branch, fixing the bug and performing unit/integration tests in isolation, ensuring no new features are added.
+
+Merge to main/master: Once the fix is verified, it's merged back into the main/master branch, which is then tagged (e.g., v1.2.1) and deployed to production.
+bash
+	git checkout main
+	git merge hotfix-1.2.1
+	git tag -a 1.2.1
+
+Merge to develop: The hotfix is also merged into the develop branch (or current release branch) to ensure the fix is included in future releases and doesn't get lost.
+bash
+	git checkout develop
+	git merge hotfix-1.2.1
+
+Cleanup: The hotfix-* branch is deleted.
+bash
+	git branch -d hotfix-1.2.1
