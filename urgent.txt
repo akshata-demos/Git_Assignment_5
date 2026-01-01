@@ -4,6 +4,8 @@ Identify & Branch: A critical bug is found in the live main/master branch. A hot
 bash
 	git checkout -b hotfix-1.2.1 main
 
+
+
 Develop & Test: Developers work only on the hotfix branch, fixing the bug and performing unit/integration tests in isolation, ensuring no new features are added.
 
 Merge to main/master: Once the fix is verified, it's merged back into the main/master branch, which is then tagged (e.g., v1.2.1) and deployed to production.
