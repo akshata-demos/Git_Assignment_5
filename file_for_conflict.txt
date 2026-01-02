@@ -1,0 +1,6 @@
+Conflict occurs with <<<<<<<< HEAD >>>>>>>>> ~~~~~~~~~~~~~~~~~=====================
+~~~~~~~~~~~~~~~~~~~~~~~~===========================================================
+~~~~~~~~~~~~~~~~~~~~~~~~===========================================================
+commit Id - 534665 == branch name
+
+<Conflict occurs when same file occurs with different code commits and that found in merge.>

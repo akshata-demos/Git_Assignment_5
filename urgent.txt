@@ -6,7 +6,7 @@ bash
 
 
 
-Develop & Test: Developers work only on the hotfix branch, fixing the bug and performing unit/integration tests in isolation, ensuring no new features are added.
+&  Develop Test:  Developers work only on the hotfix branch, fixing the bug and performing unit/integration tests in isolation, ensuring no new features are added.
 
 Merge to main/master: Once the fix is verified, it's merged back into the main/master branch, which is then tagged (e.g., v1.2.1) and deployed to production.
 bash
